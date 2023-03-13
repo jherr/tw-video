@@ -8,6 +8,7 @@
   "scripts": {
     "start": "remotion preview",
     "build": "remotion render MyComp out/video.mp4",
+    "build-transparent": "remotion render --sequence --image-format=png --pixel-format=yuva444p10le --codec=prores --prores-profile=4444 MyComp",
     "upgrade": "remotion upgrade",
     "test": "eslint src --ext ts,tsx,js,jsx && tsc"
   },
